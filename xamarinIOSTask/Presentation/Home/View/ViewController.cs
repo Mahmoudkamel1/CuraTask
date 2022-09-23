@@ -32,6 +32,7 @@ namespace xamarinIOSTask
         {
             var reviews = await _viewModel.GetHappyCustomerReviews();
             _happyCustomersCollectionDataSourceDelegate.SetDataSource(reviews: reviews);
+            await Task.Yield();
             var doctors = await _viewModel.GetDoctorAcceptInsurance();
             _doctorsCollectionViewDataSourceDelegate.SetDataSource(doctors: doctors);
         }

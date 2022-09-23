@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using Foundation;
 using UIKit;
+using xamarinIOSTask.ApplicationCore.Helper;
 using xamarinIOSTask.Domain.Entity;
 
 namespace xamarinIOSTask.Presentation.Home.View.DataSources
 {
     public class CollectionViewDetaSource : UICollectionViewController
     {
-        //private List<> _dataScource;
         private List<Review> _reviews;
         private List<Doctor> _doctors;
         private DataSourceType _type;
@@ -47,14 +47,14 @@ namespace xamarinIOSTask.Presentation.Home.View.DataSources
         {
             if (_type == DataSourceType.Reviews)
             {
-                var reviewCell = (ReviewCell)collectionView.DequeueReusableCell("happyCustomerCell", indexPath);
+                var reviewCell = (ReviewCell)collectionView.DequeueReusableCell(Constants.ReviewCellIdentifier, indexPath);
                 var review = _reviews[indexPath.Row];
                 reviewCell.ConfigureCell(review);
                 return reviewCell;
             }
             else
             {
-                var doctorCell = (DoctorCell)collectionView.DequeueReusableCell("doctorCell", indexPath);
+                var doctorCell = (DoctorCell)collectionView.DequeueReusableCell(Constants.DoctorCellIdentifier, indexPath);
 
                 var doctor = _doctors[indexPath.Row];
                 doctorCell.ConfigureCell(doctor);
