@@ -1,0 +1,46 @@
+﻿<Properties StartupConfiguration="{C251DC04-0A5F-4E53-9ACA-336DD86B2001}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="xamarinIOSTask/Domain/Usecases/HomeUseCases.cs">
+    <Files>
+      <File FileName="xamarinIOSTask/Presentation/Home/View/ViewController.cs" Line="16" Column="10" />
+      <File FileName="xamarinIOSTask/Presentation/Home/View/DataSources/CollectionViewDelegate.cs" />
+      <File FileName="xamarinIOSTask/Presentation/Home/View/Cells/ReviewCell.cs" />
+      <File FileName="xamarinIOSTask/Presentation/Home/View/Cells/ReviewCell.designer.cs" />
+      <File FileName="xamarinIOSTask/Presentation/Home/View/Cells/DoctorCell.cs" />
+      <File FileName="xamarinIOSTask/Domain/Usecases/HomeUseCases.cs" Line="66" Column="10" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="xamarinIOSTask" expanded="True" selected="True">
+            <Node name="xamarinIOSTask" expanded="True">
+              <Node name="ApplicationCore" expanded="True">
+                <Node name="Helper" expanded="True" />
+              </Node>
+              <Node name="Domain" expanded="True">
+                <Node name="Usecases" expanded="True" />
+              </Node>
+              <Node name="Presentation" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="View" expanded="True">
+                    <Node name="Cells" expanded="True">
+                      <Node name="DoctorCell.cs" expanded="True" />
+                      <Node name="ReviewCell.cs" expanded="True" />
+                    </Node>
+                    <Node name="DataSources" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.ItemProperties.xamarinIOSTask PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.04247D89-E65E-4A6F-9024-ACA4C64B67B8" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

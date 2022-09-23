@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+        <ProjectGuid>{C251DC04-0A5F-4E53-9ACA-336DD86B2001}</ProjectGuid>
+        <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+        <TemplateGuid>{edc1b0fa-90cd-4038-8fad-98fe74adb368}</TemplateGuid>
+        <OutputType>Exe</OutputType>
+        <RootNamespace>xamarinIOSTask</RootNamespace>
+        <AssemblyName>xamarinIOSTask</AssemblyName>
+        <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+        <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+        <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+        <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+        <ProvisioningType>automatic</ProvisioningType>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>portable</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+        <DefineConstants>DEBUG</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <MtouchArch>x86_64</MtouchArch>
+        <MtouchLink>None</MtouchLink>
+        <MtouchDebug>true</MtouchDebug>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+        <DebugType>none</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <MtouchLink>None</MtouchLink>
+        <MtouchArch>x86_64</MtouchArch>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>portable</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\iPhone\Debug</OutputPath>
+        <DefineConstants>DEBUG</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <MtouchArch>ARM64</MtouchArch>
+        <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+        <CodesignKey>iPhone Developer</CodesignKey>
+        <MtouchDebug>true</MtouchDebug>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+        <DebugType>none</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\iPhone\Release</OutputPath>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+        <MtouchArch>ARM64</MtouchArch>
+        <CodesignKey>iPhone Developer</CodesignKey>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System" />
+        <Reference Include="System.Xml" />
+        <Reference Include="System.Core" />
+        <Reference Include="Xamarin.iOS" />
+        <Reference Include="System.Numerics" />
+        <Reference Include="System.Numerics.Vectors" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    </ItemGroup>
+    <ItemGroup>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\Image.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\AppImages\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\AppImages\five_stars.imageset\five_stars.jpg" />
+        <ImageAsset Include="Resources\Assets.xcassets\AppImages\five_stars.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\AppImages\two_stars.imageset\two_stars.jpg" />
+        <ImageAsset Include="Resources\Assets.xcassets\AppImages\two_stars.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\AppImages\three_stars.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\AppImages\three_stars.imageset\three_stars.jpg" />
+        <ImageAsset Include="Resources\Assets.xcassets\AppImages\one_star.imageset\one_star.jpg" />
+        <ImageAsset Include="Resources\Assets.xcassets\AppImages\one_star.imageset\Contents.json" />
+        <ImageAsset Include="Resources\Assets.xcassets\AppImages\four_stars.imageset\four_stars.jpg" />
+        <ImageAsset Include="Resources\Assets.xcassets\AppImages\four_stars.imageset\Contents.json" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="Resources\" />
+        <Folder Include="Presentation\" />
+        <Folder Include="Presentation\Home\" />
+        <Folder Include="Presentation\Home\View\" />
+        <Folder Include="Presentation\Home\ViewModel\" />
+        <Folder Include="Domain\" />
+        <Folder Include="Data\" />
+        <Folder Include="ApplicationCore\" />
+        <Folder Include="ApplicationCore\AppDelegate\" />
+        <Folder Include="Presentation\SplashScreen\" />
+        <Folder Include="Domain\Interfaces\" />
+        <Folder Include="Domain\Usecases\" />
+        <Folder Include="Domain\Entity\" />
+        <Folder Include="ApplicationCore\Core\" />
+        <Folder Include="Presentation\Home\View\Cells\" />
+        <Folder Include="Presentation\Home\View\DataSources\" />
+        <Folder Include="ApplicationCore\Helper\" />
+    </ItemGroup>
+    <ItemGroup>
+        <InterfaceDefinition Include="Presentation\Home\Main.storyboard" />
+        <InterfaceDefinition Include="Presentation\SplashScreen\LaunchScreen.storyboard" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="Info.plist" />
+        <None Include="Entitlements.plist" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Presentation\Home\View\ViewController.cs" />
+        <Compile Include="Presentation\Home\View\ViewController.designer.cs">
+          <DependentUpon>ViewController.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Presentation\Home\ViewModel\HomeViewModel.cs" />
+        <Compile Include="ApplicationCore\AppDelegate\AppDelegate.cs" />
+        <Compile Include="ApplicationCore\AppDelegate\Main.cs" />
+        <Compile Include="ApplicationCore\AppDelegate\SceneDelegate.cs" />
+        <Compile Include="Domain\Entity\Doctor.cs" />
+        <Compile Include="Domain\Entity\Review.cs" />
+        <Compile Include="Domain\Interfaces\ReviewsServices.cs" />
+        <Compile Include="Domain\Interfaces\DoctorsServices.cs" />
+        <Compile Include="Domain\Usecases\HomeUseCases.cs" />
+        <Compile Include="ApplicationCore\Core\BaseEntity.cs" />
+        <Compile Include="ApplicationCore\Core\BaseUseCase.cs" />
+        <Compile Include="Presentation\Home\View\DataSources\DataSourceType.cs" />
+        <Compile Include="Presentation\Home\View\DataSources\CollectionViewDelegate.cs" />
+        <Compile Include="Presentation\Home\View\Cells\DoctorCell.cs" />
+        <Compile Include="Presentation\Home\View\Cells\DoctorCell.designer.cs">
+          <DependentUpon>DoctorCell.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Presentation\Home\View\Cells\ReviewCell.cs" />
+        <Compile Include="Presentation\Home\View\Cells\ReviewCell.designer.cs">
+          <DependentUpon>ReviewCell.cs</DependentUpon>
+        </Compile>
+        <Compile Include="ApplicationCore\Helper\Extensions.cs" />
+        <Compile Include="ApplicationCore\Helper\Constants.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <BundleResource Include="Resources\.DS_Store" />
+    </ItemGroup>
+    <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

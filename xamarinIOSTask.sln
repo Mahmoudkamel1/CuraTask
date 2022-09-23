@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.25
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xamarinIOSTask", "xamarinIOSTask\xamarinIOSTask.csproj", "{C251DC04-0A5F-4E53-9ACA-336DD86B2001}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C251DC04-0A5F-4E53-9ACA-336DD86B2001}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{C251DC04-0A5F-4E53-9ACA-336DD86B2001}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{C251DC04-0A5F-4E53-9ACA-336DD86B2001}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{C251DC04-0A5F-4E53-9ACA-336DD86B2001}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{C251DC04-0A5F-4E53-9ACA-336DD86B2001}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{C251DC04-0A5F-4E53-9ACA-336DD86B2001}.Debug|iPhone.Build.0 = Debug|iPhone
+		{C251DC04-0A5F-4E53-9ACA-336DD86B2001}.Release|iPhone.ActiveCfg = Release|iPhone
+		{C251DC04-0A5F-4E53-9ACA-336DD86B2001}.Release|iPhone.Build.0 = Release|iPhone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C97CD20D-A1CA-4D34-A377-15FA1D5D9318}
+	EndGlobalSection
+EndGlobal
