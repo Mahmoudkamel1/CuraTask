@@ -8,11 +8,18 @@ namespace xamarinIOSTask.ApplicationCore.Helper
     {
 		public static UIImage FromUrl(this UIImage image, string uri)
 		{
-			using (var url = new NSUrl(uri))
-			using (var data = NSData.FromUrl(url))
-				image = UIImage.LoadFromData(data);
+            try
+            {
+				using (var url = new NSUrl(uri))
+				using (var data = NSData.FromUrl(url))
+					image = UIImage.LoadFromData(data);
 
-			return image;
+				return image;
+			}
+			catch(Exception exception)
+            {
+				return null;
+            }
 		}
 	}
 }

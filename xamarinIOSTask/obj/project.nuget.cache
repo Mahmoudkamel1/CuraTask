@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "MA4iUW2aTV7DBQzGnYY8vvN7pxHOihZPCfI6morqJNVuLSK775RoQDSpJW57YdCs/2Tn/m1hfFgYgZUsPTITzA==",
+  "success": true,
+  "projectFilePath": "/Users/macbook/Projects/xamarinIOSTask/xamarinIOSTask/xamarinIOSTask.csproj",
+  "expectedPackageFiles": [
+    "/Users/macbook/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/macbook/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512"
+  ],
+  "logs": []
+}
